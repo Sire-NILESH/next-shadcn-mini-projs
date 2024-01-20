@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "seed:tasks": "ts-node --esm --project ./tsconfig.scripts.json ./app/(mini-projects)/tasks/_lib/seed.js",
+    "seed:tasks": "ts-node --esm --project ./tsconfig.scripts.json ./app/projects/tasks/_lib/seed.js",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"

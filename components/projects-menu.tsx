@@ -12,7 +12,6 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger,
-  navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
 import { projectItems } from "@/config/projects";
 
@@ -24,24 +23,6 @@ export function ProjectsMenu() {
           <NavigationMenuTrigger>Projects</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
-              {/* ---------empty intro title------------ */}
-              <NavigationMenuLink asChild>
-                <div
-                  className={cn(
-                    "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors bg-accent text-accent-foreground"
-                  )}
-                >
-                  <div className="text-sm font-medium leading-none">
-                    Introduction
-                  </div>
-                  <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-                    {
-                      "Contains a list of mini projects to test out new things and features."
-                    }
-                  </p>
-                </div>
-              </NavigationMenuLink>
-              {/* --------------------- */}
               {projectItems.map((project) => (
                 <ListItem
                   key={project.title}
@@ -54,14 +35,6 @@ export function ProjectsMenu() {
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
-
-        {/* <NavigationMenuItem>
-          <Link href="#" legacyBehavior passHref>
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              About
-            </NavigationMenuLink>
-          </Link>
-        </NavigationMenuItem> */}
       </NavigationMenuList>
     </NavigationMenu>
   );

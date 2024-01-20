@@ -27,7 +27,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "app/tasks/_lib/seed.js"
+    "app/projects/tasks/_lib/seed.js"
   ],
   "exclude": ["node_modules"]
 }
