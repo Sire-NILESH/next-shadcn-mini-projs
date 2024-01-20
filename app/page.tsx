@@ -15,7 +15,6 @@ export default function Home() {
     <main className="flex flex-col items-center justify-between h-full">
       <div className="mt-24 container">
         <PageHeader>
-          {/* <Announcement /> */}
           <PageHeaderHeading>Just testing out cool stuffs</PageHeaderHeading>
           <PageHeaderDescription>
             Just a template app for testing out some mainstream and trending

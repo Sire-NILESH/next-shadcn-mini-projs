@@ -5,7 +5,7 @@ export const projectItems: SidebarNavItem[] = [
     title: "Tasks Table",
     href: "/tasks",
     description:
-      "A mini project to showcase a comprehensive and feature-rich shadcn data tables",
+      "A mini project to showcase a comprehensive and feature-rich shadcn data table.",
     items: [],
   },
   {

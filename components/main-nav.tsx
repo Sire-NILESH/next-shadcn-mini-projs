@@ -33,18 +33,17 @@ export function MainNav() {
 
         <ProjectsMenu />
 
-        {/* <Link
-          href="/components"
+        <Link
+          href="/about"
           className={cn(
             "transition-colors hover:text-foreground/80",
-            pathname?.startsWith("/components")
+            pathname?.startsWith("/about")
               ? "text-foreground"
               : "text-foreground/60"
           )}
         >
-          Components
+          About
         </Link>
-        */}
       </nav>
     </div>
   );
